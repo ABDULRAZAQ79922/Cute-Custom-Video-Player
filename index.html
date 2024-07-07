@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="myVideoContainer">
+        <video id="myVideoElement" class="myVideo" src="cute-video.mp4" controls></video>
+        <div class="myControls">
+            <button id="myPlayPauseButton" class="myButton">Play</button>
+            <input type="range" id="mySeekBar" class="mySeekBar" value="0">
+            <button id="myMuteButton" class="myButton">Mute</button>
+            <input type="range" id="myVolumeBar" class="myVolumeBar" value="1" min="0" max="1" step="0.1">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

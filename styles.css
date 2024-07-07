@@ -1,0 +1,88 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.myVideoContainer {
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.myVideo {
+    width: 100%;
+    border-bottom: 4px solid #2196F3;
+}
+
+.myControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.myButton {
+    background: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.myButton:hover {
+    background: #0b79d0;
+}
+
+.mySeekBar, .myVolumeBar {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.mySeekBar {
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.mySeekBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.myVolumeBar {
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.myVolumeBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
